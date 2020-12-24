@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="./style/main.css" type="text/css" />
+
+  <title>Document</title>
+</head>
+<body>
+  <h1>Battleship Project</h1>
+  <main>
+    <div class="control buttons">
+      <button id="submit">Start New Game</button>
+      <button id="rotate">Rotate your ship</button>
+
+    </div>
+    <div class="grid-container">
+      <div class="playercontainer">
+        <div>USER</div>
+        <div id="usergrid" class="grid grid-user"></div>
+      </div>
+      <div class="playercontainer">
+        <div>COMPUTER</div>
+        <div id="computergrid" class="grid grid-computer"></div>
+      </div>
+    </div>
+    <div class="ship-dock" >
+      <div class="ship destroyer" draggable="true">
+        <div id="destroyer1"></div>
+        <div id="destroyer2"></div>
+      </div>
+      <div class="ship submarine" draggable="true" >
+        <div id="submarine1"></div>
+        <div id="submarine2"></div>
+        <div id="submarine3"></div>
+
+      </div>
+      <div class="ship cruiser" draggable="true">
+        <div id="cruiser1"></div>
+        <div id="cruiser2"></div>
+        <div id="cruiser3"></div>
+      </div>
+      <div class="ship battleship" draggable="true">
+        <div id="battleship1"></div>
+        <div id="battleship2"></div>
+        <div id="battleship3"></div>
+        <div id="battleship4"></div>
+      </div>
+      <div class="ship carrier" draggable="true">
+        <div id="carrier1"></div>
+        <div id="carrier2"></div>
+        <div id="carrier3"></div>
+        <div id="carrier4"></div>
+        <div id="carrier5"></div>
+      </div>
+    </div>
+  </main>
+</body>
+<script type="text/javascript" src="./script/app.js" ></script>
+</html>
